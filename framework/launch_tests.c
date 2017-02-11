@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 13:35:40 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/11 19:45:12 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/11 20:07:22 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ void	ft_putrslt(t_test *test)
 
 void	ft_putnbrtests(t_test *test, int cnt)
 {
+	ft_putendl("");
 	ft_putnbr(cnt);
 	ft_putstr("/");
 	ft_putnbr(ft_testlen(test));
