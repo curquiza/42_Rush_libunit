@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 13:35:40 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/11 16:59:27 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/11 17:23:42 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,6 @@ int		ft_launch_tests(t_test **test)
 		process = fork();
 		if (process > 0)
 		{
-			ft_putendl("coco");
 			wait(&status);
 			tmp->sigret = status;
 			if (WIFSIGNALED(status) == 1)
@@ -53,5 +52,5 @@ int		ft_launch_tests(t_test **test)
 		tmp->succes == 0 ? cnt++ : 0;
 		tmp = tmp->next;
 	}
-	return (cnt != ft_testlen(*test) ? -1 : 0);
+	return (cnt);
 }
