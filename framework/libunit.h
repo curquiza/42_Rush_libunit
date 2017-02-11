@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 11:54:39 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/11 15:39:19 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/11 18:16:51 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ typedef struct	s_test
 ** Functions
 */
 
+int				ft_testlen(t_test *lst);
 void			ft_load_test(t_test **test, char *name, int (*f)(void));
 int				ft_launch_tests(t_test **test);
 
