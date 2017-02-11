@@ -14,13 +14,13 @@ LIB_DIR = libft
 
 INCL_FLAG = -I $(LIB_DIR)/includes
 
-all : $(NAME)
+all : $(LIB) $(NAME)
 
 $(LIB) :
 	@make -C $(LIB_DIR)
 
-$(NAME) : $(LIB) $(OBJ) 
-	@ar rc $@ $(OBJ) 
+$(NAME) : $(OBJ) 
+	@ar rc $@ $(OBJ)
 	@ranlib $@
 	@echo "Make $@ : \033[1;33mOK\033[0m"
 
