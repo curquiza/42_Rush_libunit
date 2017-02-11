@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 13:35:40 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/11 17:23:42 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/11 18:06:51 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ int		ft_launch_tests(t_test **test)
 	tmp = *test;
 	while (tmp)
 	{
+		status = 0;
 		process = fork();
 		if (process > 0)
 		{
