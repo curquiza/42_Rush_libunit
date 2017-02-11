@@ -29,14 +29,10 @@ $(NAME) : $(OBJ)
 
 clean :
 	@make clean -C $(LIB_DIR)
-	@echo "Make $@_libft : \033[1;33mOK\033[0m"
 	@rm -f $(OBJ)
-	@echo "Make $@_libunit : \033[1;33mOK\033[0m"
 
 fclean : clean
 	@make fclean -C $(LIB_DIR)
-	@echo "Make $@_libft : \033[1;33mOK\033[0m"
 	@rm -f $(NAME)
-	@echo "Make $@_libunit : \033[1;33mOK\033[0m"
 
 re : fclean all
