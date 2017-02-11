@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 12:59:11 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/11 15:47:44 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/11 19:43:15 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ t_test	*ft_testnew(char *name, int (*f)(void))
 	new->name = ft_strdup(name);
 	new->fct = f;
 	new->sigret = 0;
-	new->succes = 0;
+	new->success = 0;
 	new->next = NULL;
 	return (new);
 }

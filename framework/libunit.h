@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 11:54:39 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/11 18:16:51 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/11 19:43:42 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define LIBUNIT_H
 
 # include "libft.h"
+# include "sys/wait.h"
+# include "sys/signal.h"
 
 /*
 ** Structures
@@ -23,7 +25,7 @@ typedef struct	s_test
 {
 	char			*name;
 	int				sigret;
-	int				succes;
+	int				success;
 	int				(*fct)(void);
 	struct s_test	*next;
 }				t_test;
