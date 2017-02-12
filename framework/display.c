@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/12 16:38:36 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 17:03:28 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/12 18:23:20 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putname(t_test *test)
 {
-	ft_putstr(">> ");
+	ft_putstr("\t>> ");
 	ft_putstr(test->name);
 	ft_putstr(" : ");
 }
