@@ -1,23 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   04_limitinf.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/12 10:37:41 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 12:57:22 by curquiza         ###   ########.fr       */
+/*   Created: 2017/02/12 12:20:05 by curquiza          #+#    #+#             */
+/*   Updated: 2017/02/12 12:41:50 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tests.h"
+#include "libunit.h"
+#include "libft.h"
 
-int		main(void)
+int		limitinf(void)
 {
-	ft_putendl_col("***********************************", B_YELLOW, DEF);	
-	ft_putendl_col("********** LIBFT - TESTS **********", B_YELLOW, DEF);	
-	ft_putendl_col("***********************************", B_YELLOW, DEF);	
-	ft_putendl("");
-	itoa_launcher();
-	return (0);
+	char	*rslt;
+
+	if (ft_strcmp((rslt = ft_itoa(-2147483648)), "-2147483648") == 0)
+	{
+		free(rslt);
+		return (0);
+	}
+	else
+	{
+		free(rslt);
+		return (-1);
+	}
 }

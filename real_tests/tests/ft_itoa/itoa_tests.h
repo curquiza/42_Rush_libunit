@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   itoa_tests.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/12 10:37:41 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 12:57:22 by curquiza         ###   ########.fr       */
+/*   Created: 2017/02/12 10:59:00 by curquiza          #+#    #+#             */
+/*   Updated: 2017/02/12 13:11:01 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tests.h"
+#ifndef ITOA_TESTS_H
+# define ITOA_TESTS_H
 
-int		main(void)
-{
-	ft_putendl_col("***********************************", B_YELLOW, DEF);	
-	ft_putendl_col("********** LIBFT - TESTS **********", B_YELLOW, DEF);	
-	ft_putendl_col("***********************************", B_YELLOW, DEF);	
-	ft_putendl("");
-	itoa_launcher();
-	return (0);
-}
+# include "libunit.h"
+# include "libft.h"
+
+int		smallnbr_1(void);
+int		smallnbr_2(void);
+int		mediumnbr(void);
+int		limitinf(void);
+int		limitsup(void);
+int		zero(void);
+int		smallnbr_neg(void);
+int		mediumnbr_neg(void);
+
+#endif
+

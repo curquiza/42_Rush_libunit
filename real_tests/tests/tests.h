@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   tests.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/12 10:37:41 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 12:57:22 by curquiza         ###   ########.fr       */
+/*   Created: 2017/02/12 10:38:45 by curquiza          #+#    #+#             */
+/*   Updated: 2017/02/12 11:42:48 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tests.h"
+#ifndef TESTS_H
+# define TESTS_H
 
-int		main(void)
-{
-	ft_putendl_col("***********************************", B_YELLOW, DEF);	
-	ft_putendl_col("********** LIBFT - TESTS **********", B_YELLOW, DEF);	
-	ft_putendl_col("***********************************", B_YELLOW, DEF);	
-	ft_putendl("");
-	itoa_launcher();
-	return (0);
-}
+# include "libunit.h"
+
+int		itoa_launcher(void);
+
+#endif
