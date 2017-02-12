@@ -7,5 +7,5 @@ env:
 os:
     - osx
 script:
-    make -C real_tests test
-    make -C tests test
+    - make -C real_tests test
+    - make -C tests test
