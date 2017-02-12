@@ -6,7 +6,7 @@
 #    By: curquiza <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/16 17:08:05 by curquiza          #+#    #+#              #
-#    Updated: 2017/02/12 10:34:21 by curquiza         ###   ########.fr        #
+#    Updated: 2017/02/12 12:55:02 by curquiza         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = tests
 
 CC = gcc -Wall -Wextra -Werror
 
-INCL_FLAG = -I includes -I $(LIB_DIR)/includes -I $(UNIT_DIR)
+INCL_FLAG = -I $(LIB_DIR)/includes -I $(UNIT_DIR)
 
 SRC = main.c \
 	 00_launcher.c \

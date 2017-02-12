@@ -1,4 +1,4 @@
-libft.a
+libft_tests.a
 srcs/*.swp
 objs/*.o
 a.out

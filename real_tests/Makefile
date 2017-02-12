@@ -1,5 +1,5 @@
 
-NAME = libft.a
+NAME = libft_tests.a
 
 FLAG = -Wall -Wextra -Werror
 CC = gcc $(FLAG)
@@ -94,6 +94,10 @@ OBJ = $(SRC:$(DIR_SRC)/%.c=$(DIR_OBJ)/%.o)
 
 all : $(NAME)
 
+test :
+	@make -C tests
+	@tests/tests
+
 $(NAME) : $(OBJ) 
 	@ar rc $@ $^
 	@ranlib $@
@@ -104,10 +108,8 @@ $(DIR_OBJ)/%.o: $(DIR_SRC)/%.c
 
 clean :
 	@rm -f $(OBJ)
-	@#echo "Make $@_libft : \033[1;33mOK\033[0m"
 
 fclean : clean
 	@rm -f $(NAME)
-	@#echo "Make $@_libft : \033[1;33mOK\033[0m"
 
 re : fclean all
