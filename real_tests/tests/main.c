@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/12 10:37:41 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 12:57:22 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/12 13:31:26 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,9 @@ int		main(void)
 	ft_putendl_col("***********************************", B_YELLOW, DEF);	
 	ft_putendl("");
 	itoa_launcher();
+	ft_putendl("");
+	ft_putendl("");
+	sleep(1);
+	strjoin_launcher();
 	return (0);
 }

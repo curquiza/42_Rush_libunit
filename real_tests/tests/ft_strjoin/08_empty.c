@@ -1,21 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tests.h                                            :+:      :+:    :+:   */
+/*   08_empty.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/12 10:38:45 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 13:23:34 by curquiza         ###   ########.fr       */
+/*   Created: 2017/02/12 14:58:11 by curquiza          #+#    #+#             */
+/*   Updated: 2017/02/12 14:58:26 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TESTS_H
-# define TESTS_H
+#include "libunit.h"
+#include "libft.h"
 
-# include "libunit.h"
-
-int		itoa_launcher(void);
-int		strjoin_launcher(void);
-
-#endif
+int		empty(void)
+{
+	char	*rslt;
+	rslt = ft_strjoin("", "");
+	if (ft_strcmp(rslt, "") == 0)
+	{
+		free(rslt);
+		return (0);
+	}
+	else
+	{
+		free(rslt);
+		return (-1);
+	}
+}

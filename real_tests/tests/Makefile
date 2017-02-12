@@ -6,7 +6,7 @@
 #    By: curquiza <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/16 17:08:05 by curquiza          #+#    #+#              #
-#    Updated: 2017/02/12 13:10:57 by curquiza         ###   ########.fr        #
+#    Updated: 2017/02/12 14:59:51 by curquiza         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,8 @@ NAME = tests
 CC = gcc -Wall -Wextra -Werror
 
 INCL_FLAG = -I $(PROJ_DIR)/includes -I $(LIB_DIR)/includes -I $(UNIT_DIR)  \
-			-I ft_itoa
+			-I ft_itoa \
+			-I ft_strjoin
 
 SRC = main.c \
 	  ft_itoa/00_launcher.c \
@@ -26,7 +27,16 @@ SRC = main.c \
 	  ft_itoa/05_limitsup.c \
 	  ft_itoa/06_zero.c \
 	  ft_itoa/07_smallnbr_neg.c \
-	  ft_itoa/08_mediumnbr_neg.c
+	  ft_itoa/08_mediumnbr_neg.c \
+	  ft_strjoin/00_launcher.c \
+	  ft_strjoin/01_basic_test.c \
+	  ft_strjoin/02_big_lines.c \
+	  ft_strjoin/03_empty_ok.c \
+	  ft_strjoin/04_ok_empty.c \
+	  ft_strjoin/05_null_ok.c \
+	  ft_strjoin/06_ok_null.c \
+	  ft_strjoin/07_nulls.c \
+	  ft_strjoin/08_empty.c
 
 OBJ = $(SRC:%.c=%.o)
 

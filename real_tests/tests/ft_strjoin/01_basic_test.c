@@ -1,21 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tests.h                                            :+:      :+:    :+:   */
+/*   01_basic_test.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/12 10:38:45 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 13:23:34 by curquiza         ###   ########.fr       */
+/*   Created: 2017/02/12 13:24:39 by curquiza          #+#    #+#             */
+/*   Updated: 2017/02/12 13:29:13 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TESTS_H
-# define TESTS_H
+#include "libunit.h"
+# include "libft.h"
 
-# include "libunit.h"
-
-int		itoa_launcher(void);
-int		strjoin_launcher(void);
-
-#endif
+int		basic_test(void)
+{
+	char	*rslt;
+	rslt = ft_strjoin("Hello ", "les gens !");
+	if (ft_strcmp(rslt, "Hello les gens !") == 0)
+	{
+		free(rslt);
+		return (0);
+	}
+	else
+	{
+		free(rslt);
+		return (-1);
+	}
+}
