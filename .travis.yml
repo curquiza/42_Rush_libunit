@@ -1,4 +1,4 @@
-langage : c
+language : c
 sudo : false
 script :
     make -C real_tests test
