@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   00_launcher.c                                      :+:      :+:    :+:   */
+/*   06_abort.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/11 17:38:06 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 16:50:32 by curquiza         ###   ########.fr       */
+/*   Created: 2017/02/12 16:48:01 by curquiza          #+#    #+#             */
+/*   Updated: 2017/02/12 16:49:35 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tests.h"
+#include "libunit.h"
 
-int		tests_launcher(void)
+int		tests_abort(void)
 {
-	t_test	*test;
-
-	test = NULL;
-	ft_load_test(&test, "Test OK", &tests_ok);
-	ft_load_test(&test, "Test KO", &tests_ko);
-	ft_load_test(&test, "Test SegFault", &tests_segflt);
-	ft_load_test(&test, "Test Bus Error", &tests_buse);
-	ft_load_test(&test, "Test Timeout", &tests_timeout);
-	ft_load_test(&test, "Test Abort", &tests_abort);
-	return (ft_launch_tests(&test));
+	free("coco");
+	if (1)
+		return (0);
+	else
+		return (-1);
 }
-
-

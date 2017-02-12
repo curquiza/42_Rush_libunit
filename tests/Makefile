@@ -6,7 +6,7 @@
 #    By: curquiza <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/16 17:08:05 by curquiza          #+#    #+#              #
-#    Updated: 2017/02/12 12:55:02 by curquiza         ###   ########.fr        #
+#    Updated: 2017/02/12 16:49:59 by curquiza         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,9 @@ SRC = main.c \
 	 01_ok.c \
 	 02_ko.c \
 	 03_segflt.c \
-	 04_buse.c
+	 04_buse.c \
+	 05_timeout.c \
+	 06_abort.c
 
 OBJ = $(SRC:%.c=%.o)
 

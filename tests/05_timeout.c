@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   00_launcher.c                                      :+:      :+:    :+:   */
+/*   05_timeout.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/11 17:38:06 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 16:50:32 by curquiza         ###   ########.fr       */
+/*   Created: 2017/02/12 16:06:33 by curquiza          #+#    #+#             */
+/*   Updated: 2017/02/12 16:31:43 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tests.h"
+#include "libunit.h"
 
-int		tests_launcher(void)
+int		tests_timeout(void)
 {
-	t_test	*test;
-
-	test = NULL;
-	ft_load_test(&test, "Test OK", &tests_ok);
-	ft_load_test(&test, "Test KO", &tests_ko);
-	ft_load_test(&test, "Test SegFault", &tests_segflt);
-	ft_load_test(&test, "Test Bus Error", &tests_buse);
-	ft_load_test(&test, "Test Timeout", &tests_timeout);
-	ft_load_test(&test, "Test Abort", &tests_abort);
-	return (ft_launch_tests(&test));
+	sleep(5);
+	if (1)
+		return (0);
+	else
+		return (-1);
 }
-
-
