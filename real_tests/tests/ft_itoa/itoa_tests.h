@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/12 10:59:00 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 13:11:01 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/12 17:26:13 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,3 @@ int		smallnbr_neg(void);
 int		mediumnbr_neg(void);
 
 #endif
-

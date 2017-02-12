@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/12 10:48:18 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 14:58:40 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/12 17:26:58 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,3 @@ int		strjoin_launcher(void)
 	ft_load_test(&test, "empty", &empty);
 	return (ft_launch_tests(&test));
 }
-
-

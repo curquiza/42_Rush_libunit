@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/12 14:58:11 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 14:58:26 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/12 17:28:34 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 int		empty(void)
 {
 	char	*rslt;
+
 	rslt = ft_strjoin("", "");
 	if (ft_strcmp(rslt, "") == 0)
 	{

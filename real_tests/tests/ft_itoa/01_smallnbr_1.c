@@ -6,12 +6,12 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/12 10:52:45 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 12:46:25 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/12 17:25:54 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libunit.h"
-# include "libft.h"
+#include "libft.h"
 
 int		smallnbr_1(void)
 {

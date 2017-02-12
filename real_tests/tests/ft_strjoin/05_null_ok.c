@@ -6,16 +6,17 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/12 13:48:02 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 14:53:25 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/12 17:28:20 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libunit.h"
-# include "libft.h"
+#include "libft.h"
 
 int		null_ok(void)
 {
 	char	*rslt;
+
 	rslt = ft_strjoin(NULL, "Hello");
 	if (ft_strcmp(rslt, "Hello") == 0)
 	{

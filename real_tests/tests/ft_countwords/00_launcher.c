@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/12 10:48:18 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 15:39:20 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/12 17:24:18 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,3 @@ int		countwords_launcher(void)
 	ft_load_test(&test, "null", &null);
 	return (ft_launch_tests(&test));
 }
-
-

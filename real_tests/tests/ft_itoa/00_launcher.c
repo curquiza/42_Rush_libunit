@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/12 10:48:18 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 15:09:10 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/12 17:25:33 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,3 @@ int		itoa_launcher(void)
 	ft_load_test(&test, "mediumnbr_neg -> -21426", &mediumnbr_neg);
 	return (ft_launch_tests(&test));
 }
-
-

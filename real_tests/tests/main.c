@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/12 10:37:41 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 15:48:17 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/12 17:23:21 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,10 @@ int		main(void)
 	int		cnt;
 
 	cnt = 0;
-	ft_putendl_col("***********************************", B_YELLOW, DEF);	
-	ft_putendl_col("********** LIBFT - TESTS **********", B_YELLOW, DEF);	
-	ft_putendl_col("***********************************", B_YELLOW, DEF);	
+	ft_putendl("");
+	ft_putendl_col("***********************************", B_YELLOW, DEF);
+	ft_putendl_col("********** LIBFT - TESTS **********", B_YELLOW, DEF);
+	ft_putendl_col("***********************************", B_YELLOW, DEF);
 	ft_putendl("");
 	cnt = cnt + itoa_launcher();
 	ft_putendl("");

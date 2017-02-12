@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/12 15:17:14 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 15:39:33 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/12 17:24:51 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include "libunit.h"
 # include "libft.h"
-
 
 int		basic_test_1(void);
 int		basic_test_2(void);
@@ -26,4 +25,3 @@ int		bothempty(void);
 int		null(void);
 
 #endif
-

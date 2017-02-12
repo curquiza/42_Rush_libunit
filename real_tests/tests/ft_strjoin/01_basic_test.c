@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/12 13:24:39 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 15:18:57 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/12 17:27:16 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 int		basic_test(void)
 {
 	char	*rslt;
+
 	rslt = ft_strjoin("Hello ", "les gens !");
 	if (ft_strcmp(rslt, "Hello les gens !") == 0)
 	{
