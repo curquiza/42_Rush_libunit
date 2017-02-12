@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 13:35:40 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/11 20:07:22 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/12 17:14:50 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,30 +25,6 @@ int		ft_testlen(t_test *lst)
 	return (cpt);
 }
 
-void	ft_putrslt(t_test *test)
-{
-	ft_putstr(">> ");
-	ft_putstr(test->name);
-	ft_putstr(" : ");
-	if (test->sigret == SIGSEGV)
-		ft_putendl("[SEGV]");
-	else if (test->sigret == SIGBUS)
-		ft_putendl("[BUSE]");
-	else if (test->success == -1)
-		ft_putendl("[KO]");
-	else
-		ft_putendl("[OK]");
-}
-
-void	ft_putnbrtests(t_test *test, int cnt)
-{
-	ft_putendl("");
-	ft_putnbr(cnt);
-	ft_putstr("/");
-	ft_putnbr(ft_testlen(test));
-	ft_putendl(" tests checked");
-}
-
 void	ft_ret_analysis(t_test *test, int status)
 {
 	if (WIFEXITED(status))
@@ -59,10 +35,25 @@ void	ft_ret_analysis(t_test *test, int status)
 		else
 			test->success = 0;
 	}
-	if (WIFSIGNALED(status) == 1)
+	if (status == SIGALRM || WIFSIGNALED(status) == 1)
 	{
 		test->sigret = status;
 		test->success = -1;
+	}
+}
+
+void	ft_fork(int *status, pid_t process, t_test *tmp)
+{
+	if (process > 0)
+	{
+		wait(status);
+		ft_ret_analysis(tmp, *status);
+		ft_putrslt(tmp);
+	}
+	else
+	{
+		ualarm(1000000 * 2, 0);
+		exit(tmp->fct());
 	}
 }
 
@@ -78,15 +69,9 @@ int		ft_launch_tests(t_test **test)
 	while (tmp)
 	{
 		status = 0;
+		ft_putname(tmp);
 		process = fork();
-		if (process > 0)
-		{
-			wait(&status);
-			ft_ret_analysis(tmp, status);
-			ft_putrslt(tmp);
-		}
-		else
-			exit(tmp->fct());
+		ft_fork(&status, process, tmp);
 		tmp->success == 0 ? cnt++ : 0;
 		tmp = tmp->next;
 	}

@@ -4,7 +4,8 @@ FLAG = -Wall -Wextra -Werror
 CC = gcc $(FLAG)
 
 SRC = launch_tests.c \
-	  load_test.c
+	  load_test.c \
+	  display.c
 
 OBJ = $(SRC:%.c=%.o)
 
