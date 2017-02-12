@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/12 10:48:18 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 17:26:58 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/12 18:37:07 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@ int		strjoin_launcher(void)
 	test = NULL;
 	ft_putendl_col("----- STRJOIN -----", B_YELLOW, DEF);
 	ft_putendl("");
-	ft_load_test(&test, "basic_test", &basic_test);
-	ft_load_test(&test, "big_lines", &big_lines);
-	ft_load_test(&test, "empty_ok", &empty_ok);
-	ft_load_test(&test, "ok_empty", &ok_empty);
-	ft_load_test(&test, "null_ok", &null_ok);
-	ft_load_test(&test, "ok_null", &ok_null);
-	ft_load_test(&test, "nulls", &nulls);
-	ft_load_test(&test, "empty", &empty);
+	ft_load_test(&test, "Basic test", &basic_test);
+	ft_load_test(&test, "Big lines", &big_lines);
+	ft_load_test(&test, "Empty - Ok", &empty_ok);
+	ft_load_test(&test, "Ok - Empty", &ok_empty);
+	ft_load_test(&test, "NUll - Ok", &null_ok);
+	ft_load_test(&test, "Ok - Null", &ok_null);
+	ft_load_test(&test, "Both nulls", &nulls);
+	ft_load_test(&test, "Both empty", &empty);
 	return (ft_launch_tests(&test));
 }

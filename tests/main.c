@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 17:48:34 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 17:18:19 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/12 18:02:18 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int		main(void)
 	ft_putendl("********** TESTS **********");
 	ft_putendl("***************************");
 	ft_putendl("");
-	tests_launcher();
+	if (tests_launcher() == -1)
+		return (-1);
 	return (0);
 }
