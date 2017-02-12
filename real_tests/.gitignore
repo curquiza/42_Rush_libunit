@@ -6,3 +6,4 @@ tests/a.out
 tests/*.o
 tests/tests
 tests/*.swp
+tests/*/*.o
