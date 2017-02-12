@@ -1,5 +1,3 @@
 Intégration continue
 
-[![travis](https://travis-ci.org/curquiza/Rush_libunit.svg?branch=master)](https://travis-ci.org/curquiza/Rush_libunit)
-
-[![travis](https://travis-ci.org/curquiza/Rush_libunit.svg?branch=master)](https://travis-ci.org/curquiza/Rush_libunit)
+[![Build Status](https://travis-ci.org/curquiza/Rush_libunit.svg?branch=master)](https://travis-ci.org/curquiza/Rush_libunit)
