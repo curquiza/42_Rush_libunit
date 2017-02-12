@@ -6,11 +6,17 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 13:35:40 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 17:14:50 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/12 20:38:16 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libunit.h"
+
+void	ft_catch_signalabort(int status)
+{
+	(void)status;
+	ft_putstr("\t");
+}
 
 int		ft_testlen(t_test *lst)
 {
@@ -52,6 +58,7 @@ void	ft_fork(int *status, pid_t process, t_test *tmp)
 	}
 	else
 	{
+		signal(SIGABRT, &ft_catch_signalabort);
 		ualarm(1000000 * 2, 0);
 		exit(tmp->fct());
 	}
