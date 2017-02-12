@@ -1,0 +1,8 @@
+libft.a
+srcs/*.swp
+objs/*.o
+a.out
+tests/a.out
+tests/*.o
+tests/tests
+tests/*.swp
