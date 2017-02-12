@@ -94,7 +94,7 @@ OBJ = $(SRC:$(DIR_SRC)/%.c=$(DIR_OBJ)/%.o)
 
 all : $(NAME)
 
-test :
+test : $(NAME)
 	@make -C tests
 	@tests/tests
 
