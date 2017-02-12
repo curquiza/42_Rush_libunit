@@ -108,8 +108,10 @@ $(DIR_OBJ)/%.o: $(DIR_SRC)/%.c
 
 clean :
 	@rm -f $(OBJ)
+	@make -C tests $@
 
 fclean : clean
 	@rm -f $(NAME)
+	@make -C tests $@
 
 re : fclean all
