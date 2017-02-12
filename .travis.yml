@@ -1,4 +1,10 @@
-language : c
-sudo : false
-script :
+language: c
+sudo: false
+
+env:
+    - ARCH=x86_64
+
+os:
+    -osx
+script:
     make -C real_tests test
