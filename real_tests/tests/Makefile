@@ -6,7 +6,7 @@
 #    By: curquiza <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/16 17:08:05 by curquiza          #+#    #+#              #
-#    Updated: 2017/02/12 14:59:51 by curquiza         ###   ########.fr        #
+#    Updated: 2017/02/12 15:40:17 by curquiza         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,8 @@ CC = gcc -Wall -Wextra -Werror
 
 INCL_FLAG = -I $(PROJ_DIR)/includes -I $(LIB_DIR)/includes -I $(UNIT_DIR)  \
 			-I ft_itoa \
-			-I ft_strjoin
+			-I ft_strjoin \
+			-I ft_countwords
 
 SRC = main.c \
 	  ft_itoa/00_launcher.c \
@@ -36,7 +37,15 @@ SRC = main.c \
 	  ft_strjoin/05_null_ok.c \
 	  ft_strjoin/06_ok_null.c \
 	  ft_strjoin/07_nulls.c \
-	  ft_strjoin/08_empty.c
+	  ft_strjoin/08_empty.c \
+	  ft_countwords/00_launcher.c \
+	  ft_countwords/01_basic_test_1.c \
+	  ft_countwords/02_basic_test_2.c \
+	  ft_countwords/03_basic_test_3.c \
+	  ft_countwords/04_emptyline.c \
+	  ft_countwords/05_emptychar.c \
+	  ft_countwords/06_bothempty.c \
+	  ft_countwords/07_null.c
 
 OBJ = $(SRC:%.c=%.o)
 

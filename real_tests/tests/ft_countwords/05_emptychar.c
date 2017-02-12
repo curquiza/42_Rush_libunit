@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tests.h                                            :+:      :+:    :+:   */
+/*   05_emptychar.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/12 10:38:45 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 15:15:31 by curquiza         ###   ########.fr       */
+/*   Created: 2017/02/12 15:30:43 by curquiza          #+#    #+#             */
+/*   Updated: 2017/02/12 15:41:15 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TESTS_H
-# define TESTS_H
+#include "libunit.h"
+#include "libft.h"
 
-# include "libunit.h"
-
-int		itoa_launcher(void);
-int		strjoin_launcher(void);
-int		countwords_launcher(void);
-
-#endif
+int		emptychar(void)
+{
+	if (ft_countwords("Hello les cocos !", '\0') == 1)
+		return (0);
+	else
+		return (-1);
+}

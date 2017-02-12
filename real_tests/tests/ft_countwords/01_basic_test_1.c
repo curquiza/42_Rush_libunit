@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tests.h                                            :+:      :+:    :+:   */
+/*   01_basic_test_1.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/12 10:38:45 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 15:15:31 by curquiza         ###   ########.fr       */
+/*   Created: 2017/02/12 15:21:40 by curquiza          #+#    #+#             */
+/*   Updated: 2017/02/12 15:24:23 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TESTS_H
-# define TESTS_H
+#include "libunit.h"
+#include "libft.h"
 
-# include "libunit.h"
-
-int		itoa_launcher(void);
-int		strjoin_launcher(void);
-int		countwords_launcher(void);
-
-#endif
+int		basic_test_1(void)
+{
+	if (ft_countwords("Hello les cocos", ' ') == 3)
+		return (0);
+	else
+		return (-1);
+}

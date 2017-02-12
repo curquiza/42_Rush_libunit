@@ -6,7 +6,7 @@
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/12 10:37:41 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 13:31:26 by curquiza         ###   ########.fr       */
+/*   Updated: 2017/02/12 15:48:17 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,30 @@
 
 int		main(void)
 {
+	int		cnt;
+
+	cnt = 0;
 	ft_putendl_col("***********************************", B_YELLOW, DEF);	
 	ft_putendl_col("********** LIBFT - TESTS **********", B_YELLOW, DEF);	
 	ft_putendl_col("***********************************", B_YELLOW, DEF);	
 	ft_putendl("");
-	itoa_launcher();
+	cnt = cnt + itoa_launcher();
 	ft_putendl("");
 	ft_putendl("");
 	sleep(1);
-	strjoin_launcher();
+	cnt = cnt + strjoin_launcher();
+	ft_putendl("");
+	ft_putendl("");
+	sleep(1);
+	cnt = cnt + countwords_launcher();
+	ft_putendl("");
+	if (cnt < 0)
+	{
+		ft_putendl_col(">>>>> FAIL <<<<<", B_RED, DEF);
+		ft_putendl("");
+		return (-1);
+	}
+	ft_putendl_col(">>>>> SUCCESS <<<<<", B_GREEN, DEF);
+	ft_putendl("");
 	return (0);
 }

@@ -1,22 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tests.h                                            :+:      :+:    :+:   */
+/*   countwords_tests.h                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: curquiza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/12 10:38:45 by curquiza          #+#    #+#             */
-/*   Updated: 2017/02/12 15:15:31 by curquiza         ###   ########.fr       */
+/*   Created: 2017/02/12 15:17:14 by curquiza          #+#    #+#             */
+/*   Updated: 2017/02/12 15:39:33 by curquiza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TESTS_H
-# define TESTS_H
+#ifndef COUNTWORDS_TESTS_H
+# define COUNTWORDS_TESTS_H
 
 # include "libunit.h"
+# include "libft.h"
 
-int		itoa_launcher(void);
-int		strjoin_launcher(void);
-int		countwords_launcher(void);
+
+int		basic_test_1(void);
+int		basic_test_2(void);
+int		basic_test_3(void);
+int		emptyline(void);
+int		emptychar(void);
+int		bothempty(void);
+int		null(void);
 
 #endif
+
