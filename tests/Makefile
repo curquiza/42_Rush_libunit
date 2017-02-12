@@ -6,7 +6,7 @@
 #    By: curquiza <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/16 17:08:05 by curquiza          #+#    #+#              #
-#    Updated: 2017/02/12 10:27:13 by curquiza         ###   ########.fr        #
+#    Updated: 2017/02/12 10:34:21 by curquiza         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ UNIT_FLAG = -L$(UNIT_DIR) -lunit
 all : $(NAME)
 
 test : $(NAME)
-	./$(NAME)
+	@./$(NAME)
 
 $(UNIT) :
 	@make -C $(UNIT_DIR)
@@ -58,9 +58,9 @@ clean :
 	@echo "Make $@ : \033[1;32mOK\033[0m"
 
 fclean : clean
-	make fclean -C $(UNIT_DIR)
+	@make fclean -C $(UNIT_DIR)
 	@echo "Make $@_libunit & $@_libft : \033[1;33mOK\033[0m"
-	rm -f $(NAME)
+	@rm -f $(NAME)
 	@echo "Make $@ : \033[1;32mOK\033[0m"
 
 re : fclean all
